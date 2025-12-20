@@ -1,0 +1,22 @@
+{
+  "name": "rooneyemily",
+  "description": "The default Marko starter app with TypeScript",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "marko": "^6.0.0"
+  },
+  "devDependencies": {
+    "@marko/run": "^0.9.3",
+    "@marko/run-adapter-static": "^2.0.4",
+    "gh-pages": "^6.3.0"
+  },
+  "private": true,
+  "scripts": {
+    "dev": "marko-run",
+    "build": "marko-run build",
+    "deploy": "marko-run build && gh-pages --cname rooneyemily.github.io --nojekyll -d dist/public -u \"rooneyemily <emilyrooney6@gmail.com>\"",
+    "preview": "marko-run preview",
+    "start": "node --enable-source-maps ./dist/index.mjs"
+  }
+}
