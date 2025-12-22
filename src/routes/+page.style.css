@@ -1,4 +1,7 @@
-
+.profile-picture {
+  width: 30rem;
+  border-radius: 15rem;
+}
 .projects {
   list-style: none;
   margin: 0;
