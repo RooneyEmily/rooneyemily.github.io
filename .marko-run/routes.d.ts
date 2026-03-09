@@ -11,7 +11,21 @@ declare module "@marko/run" {
 	interface AppData extends Run.DefineApp<{
 		routes: {
 			"/": { verb: "get"; };
+			"/projects/attention-in-AR": { verb: "get"; };
+			"/projects/attention-in-VR": { verb: "get"; };
+			"/projects/camera-sensitivities": { verb: "get"; };
+			"/projects/diffraction-grating-calc": { verb: "get"; };
+			"/projects/display-CMFs": { verb: "get"; };
+			"/projects/display-characterization": { verb: "get"; };
+			"/projects/emotion-estimation": { verb: "get"; };
+			"/projects/kubelka-munk": { verb: "get"; };
+			"/projects/lighting": { verb: "get"; };
+			"/projects/makeup-meas": { verb: "get"; };
+			"/projects/optimal-color-space": { verb: "get"; };
+			"/projects/radiometry": { verb: "get"; };
 			"/projects/rasterization-engine": { verb: "get"; };
+			"/projects/spectral-imaging": { verb: "get"; };
+			"/projects/unique-hue": { verb: "get"; };
 			"/projects/virtual-color-atlas": { verb: "get"; };
 		}
 	}> {}
@@ -28,10 +42,164 @@ declare module "../src/routes/+page.marko" {
   }
 }
 
+declare module "../src/routes/projects/attention-in-AR/+page.marko" {
+  namespace MarkoRun {
+    export { NotHandled, NotMatched, GetPaths, PostPaths, GetablePath, GetableHref, PostablePath, PostableHref, Platform };
+    export type Route = Run.Routes["/projects/attention-in-AR"];
+    export type Context = Run.MultiRouteContext<Route> & Marko.Global;
+    export type Handler = Run.HandlerLike<Route>;
+    /** @deprecated use `((context, next) => { ... }) satisfies MarkoRun.Handler` instead */
+    export const route: Run.HandlerTypeFn<Route>;
+  }
+}
+
+declare module "../src/routes/projects/attention-in-VR/+page.marko" {
+  namespace MarkoRun {
+    export { NotHandled, NotMatched, GetPaths, PostPaths, GetablePath, GetableHref, PostablePath, PostableHref, Platform };
+    export type Route = Run.Routes["/projects/attention-in-VR"];
+    export type Context = Run.MultiRouteContext<Route> & Marko.Global;
+    export type Handler = Run.HandlerLike<Route>;
+    /** @deprecated use `((context, next) => { ... }) satisfies MarkoRun.Handler` instead */
+    export const route: Run.HandlerTypeFn<Route>;
+  }
+}
+
+declare module "../src/routes/projects/camera-sensitivities/+page.marko" {
+  namespace MarkoRun {
+    export { NotHandled, NotMatched, GetPaths, PostPaths, GetablePath, GetableHref, PostablePath, PostableHref, Platform };
+    export type Route = Run.Routes["/projects/camera-sensitivities"];
+    export type Context = Run.MultiRouteContext<Route> & Marko.Global;
+    export type Handler = Run.HandlerLike<Route>;
+    /** @deprecated use `((context, next) => { ... }) satisfies MarkoRun.Handler` instead */
+    export const route: Run.HandlerTypeFn<Route>;
+  }
+}
+
+declare module "../src/routes/projects/diffraction-grating-calc/+page.marko" {
+  namespace MarkoRun {
+    export { NotHandled, NotMatched, GetPaths, PostPaths, GetablePath, GetableHref, PostablePath, PostableHref, Platform };
+    export type Route = Run.Routes["/projects/diffraction-grating-calc"];
+    export type Context = Run.MultiRouteContext<Route> & Marko.Global;
+    export type Handler = Run.HandlerLike<Route>;
+    /** @deprecated use `((context, next) => { ... }) satisfies MarkoRun.Handler` instead */
+    export const route: Run.HandlerTypeFn<Route>;
+  }
+}
+
+declare module "../src/routes/projects/display-CMFs/+page.marko" {
+  namespace MarkoRun {
+    export { NotHandled, NotMatched, GetPaths, PostPaths, GetablePath, GetableHref, PostablePath, PostableHref, Platform };
+    export type Route = Run.Routes["/projects/display-CMFs"];
+    export type Context = Run.MultiRouteContext<Route> & Marko.Global;
+    export type Handler = Run.HandlerLike<Route>;
+    /** @deprecated use `((context, next) => { ... }) satisfies MarkoRun.Handler` instead */
+    export const route: Run.HandlerTypeFn<Route>;
+  }
+}
+
+declare module "../src/routes/projects/display-characterization/+page.marko" {
+  namespace MarkoRun {
+    export { NotHandled, NotMatched, GetPaths, PostPaths, GetablePath, GetableHref, PostablePath, PostableHref, Platform };
+    export type Route = Run.Routes["/projects/display-characterization"];
+    export type Context = Run.MultiRouteContext<Route> & Marko.Global;
+    export type Handler = Run.HandlerLike<Route>;
+    /** @deprecated use `((context, next) => { ... }) satisfies MarkoRun.Handler` instead */
+    export const route: Run.HandlerTypeFn<Route>;
+  }
+}
+
+declare module "../src/routes/projects/emotion-estimation/+page.marko" {
+  namespace MarkoRun {
+    export { NotHandled, NotMatched, GetPaths, PostPaths, GetablePath, GetableHref, PostablePath, PostableHref, Platform };
+    export type Route = Run.Routes["/projects/emotion-estimation"];
+    export type Context = Run.MultiRouteContext<Route> & Marko.Global;
+    export type Handler = Run.HandlerLike<Route>;
+    /** @deprecated use `((context, next) => { ... }) satisfies MarkoRun.Handler` instead */
+    export const route: Run.HandlerTypeFn<Route>;
+  }
+}
+
+declare module "../src/routes/projects/kubelka-munk/+page.marko" {
+  namespace MarkoRun {
+    export { NotHandled, NotMatched, GetPaths, PostPaths, GetablePath, GetableHref, PostablePath, PostableHref, Platform };
+    export type Route = Run.Routes["/projects/kubelka-munk"];
+    export type Context = Run.MultiRouteContext<Route> & Marko.Global;
+    export type Handler = Run.HandlerLike<Route>;
+    /** @deprecated use `((context, next) => { ... }) satisfies MarkoRun.Handler` instead */
+    export const route: Run.HandlerTypeFn<Route>;
+  }
+}
+
+declare module "../src/routes/projects/lighting/+page.marko" {
+  namespace MarkoRun {
+    export { NotHandled, NotMatched, GetPaths, PostPaths, GetablePath, GetableHref, PostablePath, PostableHref, Platform };
+    export type Route = Run.Routes["/projects/lighting"];
+    export type Context = Run.MultiRouteContext<Route> & Marko.Global;
+    export type Handler = Run.HandlerLike<Route>;
+    /** @deprecated use `((context, next) => { ... }) satisfies MarkoRun.Handler` instead */
+    export const route: Run.HandlerTypeFn<Route>;
+  }
+}
+
+declare module "../src/routes/projects/makeup-meas/+page.marko" {
+  namespace MarkoRun {
+    export { NotHandled, NotMatched, GetPaths, PostPaths, GetablePath, GetableHref, PostablePath, PostableHref, Platform };
+    export type Route = Run.Routes["/projects/makeup-meas"];
+    export type Context = Run.MultiRouteContext<Route> & Marko.Global;
+    export type Handler = Run.HandlerLike<Route>;
+    /** @deprecated use `((context, next) => { ... }) satisfies MarkoRun.Handler` instead */
+    export const route: Run.HandlerTypeFn<Route>;
+  }
+}
+
+declare module "../src/routes/projects/optimal-color-space/+page.marko" {
+  namespace MarkoRun {
+    export { NotHandled, NotMatched, GetPaths, PostPaths, GetablePath, GetableHref, PostablePath, PostableHref, Platform };
+    export type Route = Run.Routes["/projects/optimal-color-space"];
+    export type Context = Run.MultiRouteContext<Route> & Marko.Global;
+    export type Handler = Run.HandlerLike<Route>;
+    /** @deprecated use `((context, next) => { ... }) satisfies MarkoRun.Handler` instead */
+    export const route: Run.HandlerTypeFn<Route>;
+  }
+}
+
+declare module "../src/routes/projects/radiometry/+page.marko" {
+  namespace MarkoRun {
+    export { NotHandled, NotMatched, GetPaths, PostPaths, GetablePath, GetableHref, PostablePath, PostableHref, Platform };
+    export type Route = Run.Routes["/projects/radiometry"];
+    export type Context = Run.MultiRouteContext<Route> & Marko.Global;
+    export type Handler = Run.HandlerLike<Route>;
+    /** @deprecated use `((context, next) => { ... }) satisfies MarkoRun.Handler` instead */
+    export const route: Run.HandlerTypeFn<Route>;
+  }
+}
+
 declare module "../src/routes/projects/rasterization-engine/+page.marko" {
   namespace MarkoRun {
     export { NotHandled, NotMatched, GetPaths, PostPaths, GetablePath, GetableHref, PostablePath, PostableHref, Platform };
     export type Route = Run.Routes["/projects/rasterization-engine"];
+    export type Context = Run.MultiRouteContext<Route> & Marko.Global;
+    export type Handler = Run.HandlerLike<Route>;
+    /** @deprecated use `((context, next) => { ... }) satisfies MarkoRun.Handler` instead */
+    export const route: Run.HandlerTypeFn<Route>;
+  }
+}
+
+declare module "../src/routes/projects/spectral-imaging/+page.marko" {
+  namespace MarkoRun {
+    export { NotHandled, NotMatched, GetPaths, PostPaths, GetablePath, GetableHref, PostablePath, PostableHref, Platform };
+    export type Route = Run.Routes["/projects/spectral-imaging"];
+    export type Context = Run.MultiRouteContext<Route> & Marko.Global;
+    export type Handler = Run.HandlerLike<Route>;
+    /** @deprecated use `((context, next) => { ... }) satisfies MarkoRun.Handler` instead */
+    export const route: Run.HandlerTypeFn<Route>;
+  }
+}
+
+declare module "../src/routes/projects/unique-hue/+page.marko" {
+  namespace MarkoRun {
+    export { NotHandled, NotMatched, GetPaths, PostPaths, GetablePath, GetableHref, PostablePath, PostableHref, Platform };
+    export type Route = Run.Routes["/projects/unique-hue"];
     export type Context = Run.MultiRouteContext<Route> & Marko.Global;
     export type Handler = Run.HandlerLike<Route>;
     /** @deprecated use `((context, next) => { ... }) satisfies MarkoRun.Handler` instead */
@@ -54,7 +222,7 @@ declare module "../src/routes/+layout.marko" {
   export interface Input extends Run.LayoutInput<typeof import("../src/routes/+layout.marko")> {}
   namespace MarkoRun {
     export { NotHandled, NotMatched, GetPaths, PostPaths, GetablePath, GetableHref, PostablePath, PostableHref, Platform };
-    export type Route = Run.Routes["/" | "/projects/rasterization-engine" | "/projects/virtual-color-atlas"];
+    export type Route = Run.Routes["/" | "/projects/attention-in-AR" | "/projects/attention-in-VR" | "/projects/camera-sensitivities" | "/projects/diffraction-grating-calc" | "/projects/display-CMFs" | "/projects/display-characterization" | "/projects/emotion-estimation" | "/projects/kubelka-munk" | "/projects/lighting" | "/projects/makeup-meas" | "/projects/optimal-color-space" | "/projects/radiometry" | "/projects/rasterization-engine" | "/projects/spectral-imaging" | "/projects/unique-hue" | "/projects/virtual-color-atlas"];
     export type Context = Run.MultiRouteContext<Route> & Marko.Global;
     export type Handler = Run.HandlerLike<Route>;
     /** @deprecated use `((context, next) => { ... }) satisfies MarkoRun.Handler` instead */

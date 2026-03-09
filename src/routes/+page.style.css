@@ -1,39 +1,56 @@
+header {
+  background-image: url("./aboutme/background.png");
+  background-size: cover;      /* fills the container */
+  background-repeat: no-repeat; /* prevents repeating */
+  background-position: center;  /* keeps image centered */
+}
+
 .profile-picture {
-  width: 30rem;
+  width: 15rem;
   border-radius: 15rem;
 }
 .projects {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 1rem;
+  list-style: none;
+  padding: 1rem;
+  margin: 0;
 
   li {
     margin: 0;
-  }
+    background-color: rgb(243, 230, 238);
+    border-radius: 1rem;
 
-  a {
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    color: black;
-    background: #ecc;
-    border-radius: 0.5rem;
+    #research & {
+      background-color: rgb(240, 199, 169);
+    }
 
-    &:hover,
-    &:focus-visible {
-      text-decoration: underline;
-    }
-    img {
-      width: 100%;
-      border-radius: 0.5rem;
-    }
-    span {
+    a {
       text-decoration: none;
-      padding: 0.5rem 0;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      padding-top: 1rem;
+      padding-bottom: 0.5rem;
+      gap: 0.5rem;
+
+      &:hover,
+      &:focus-visible {
+        text-decoration: underline;
+      }
+    }
+
+    img {
+      width: 90%;
+      margin: auto;
+      aspect-ratio: 16 / 9;
+      object-fit: contain;
+      display: block;
+    }
+
+    span {
+      color: black;
       text-align: center;
     }
   }
