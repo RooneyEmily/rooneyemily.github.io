@@ -1,0 +1,4 @@
+img {
+    max-width: min(40rem, 90vw);
+    max-height: 30rem;
+}
